@@ -1,0 +1,458 @@
+/* project section */
+
+.projects{
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+
+.pj h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    min-height: auto;
+    position: relative;
+    padding-top: 180px;
+    margin-top: -100px;
+    scroll-margin-top: 80px;
+}
+
+
+.pj a{
+    color: #b74b4b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    min-height: auto;
+    position: relative;
+    padding-top: -100px;
+    margin-top: -100px;
+    scroll-margin-top:100px;
+    font-family: "poppins",sans-serif;
+    font-weight: 700;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s ease;
+}
+
+.pj a:hover{
+    color: aliceblue;
+    border-bottom: 2px solid #b74b4b;
+
+}
+
+.project-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    gap: 2rem;
+    position: relative;
+    top: 25px;
+
+}
+
+.projectcard, .projectcard1, .projectcard2,.projectcard3 {
+    background-color: #161616;
+    border: 2px solid #b74b4b;
+    border-radius: 20px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    overflow: hidden;
+    cursor: pointer;
+    width: 300px;
+    height: 450px;
+    box-shadow: 0 0 5px #b74b4b;
+    transition: 0.3s ease;
+
+
+}
+
+.projectcard:hover,.projectcard1:hover,.projectcard2:hover,.projectcard3:hover{
+    box-shadow: 0 0 5px #b74b4b,
+                0 0 20px #b74b4b,
+                0 0 50px #b74b4b;
+}
+
+
+
+.projectcard img,.projectcard1 img,.projectcard2 img,.projectcard3 img{
+    width: 200px;
+    height: 200px;
+    margin-top: -40px;
+    border-radius: 20px;
+}
+
+.projectcard h3,.projectcard1 h3,.projectcard2 h3,.projectcard3 h3{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.projectcard p,.projectcard1 p,.projectcard2 p,.projectcard3 p {
+    display: flex;
+    justify-content: center;   
+    align-items: center;      
+    color: aliceblue;
+    font-size: 15px;          
+    text-align: center;       
+}
+
+
+.projectcard .rbtn,.projectcard1 .rbtn,.projectcard2 .rbtn,.projectcard3 .rbtn{
+    color: #b74b4b;
+    border: 2px solid #b74b4b;
+    padding: 10px 20px ;
+    border-radius: 20px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-family: "poppins",sans-serif;
+    transition: 0.3s ease;
+
+} 
+
+.projectcard .rbtn:hover,.projectcard1 .rbtn:hover,.projectcard2 .rbtn:hover,.projectcard3 .rbtn:hover{
+    background-color: #b74b4b;
+    color: black;
+    transform: scale(1.1);
+}
+
+.contactmee{
+    background-color: #000000;
+}
+
+.contactmee a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    margin-top: 100px;
+    padding: -100px;
+    scroll-margin-top: 100px ;
+}
+
+.contactmee h2{
+    margin-bottom: 3rem;
+    color: white;
+}
+
+.contactmee form{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 3rem  ;
+     margin: 5rem 0;
+     text-align: center; 
+}
+
+.contactmee form .inputbox input, 
+.contactmee form textarea {
+    width: 100%;              /* Full width alignment */
+    padding: 1rem;            /* Balanced spacing */
+    font-size: 18px;          /* Readable text size */
+    color: #b74b4b;
+    background-color: #161616;
+    border-radius: 1rem;    /* Smooth corners */
+    border: 2px solid #b74b4b;
+    margin: 0.8rem 0;         /* Proper spacing between boxes */
+    resize: none;
+    box-sizing: border-box;   /* Prevent overflow issues */
+}
+
+
+
+.footer {
+    background-color: #161616;
+    padding: 50px 0;
+    text-align: center;       /* Entire footer content center */
+    margin-bottom: 52px;
+}
+
+.footer .social-icons {
+    margin: 0 auto;           /* Center horizontally */
+    display: inline-block;    /* Prevent full width stretch */
+}
+
+.footer ul {
+    text-align: center;       /* Center list items */
+    font-size: 1rem;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.footer ul li {
+    display: inline-block;
+    margin: 0 15px;           /* Equal spacing left & right */
+}
+
+.footer ul li a {
+    color: white;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease-in-out;
+}
+
+.footer ul li a:hover {
+    border-bottom: 3px solid #b74b4b;
+}
+
+.footer .copyright {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 12px;
+}
+
+
+/* ==========================
+   RESPONSIVE DESIGN
+========================== */
+
+/* Tablet */
+@media (max-width:1024px){
+
+    header{
+        padding:1rem 5%;
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    nav a{
+        margin:10px;
+    }
+
+    .home{
+        flex-direction:column;
+        text-align:center;
+        gap:3rem;
+        margin-top:180px;
+    }
+
+    .homeimg img{
+        width:280px;
+        height:340px;
+        position:static;
+    }
+
+    .content{
+        top:0;
+    }
+
+    .content p br{
+        display:none;
+    }
+
+    .aboutme{
+        align-items:center;
+    }
+
+    .abm h2{
+        right:0;
+        top:0;
+    }
+
+    .abmepic img{
+        position:static;
+        width:260px;
+        height:260px;
+        margin:30px 0;
+    }
+
+    .para p{
+        position:static;
+        width:90%;
+    }
+
+    .btn1{
+        position:static;
+        margin-top:30px;
+    }
+
+    .project-box{
+        flex-wrap:wrap;
+    }
+
+    .contactmee form{
+        flex-direction:column;
+        width:90%;
+        margin:auto;
+    }
+
+    .inputgrp,
+    .inputgrp1{
+        width:100%;
+    }
+
+    .footer ul li{
+        display:block;
+        margin:12px 0;
+    }
+
+}
+
+
+/* Mobile */
+@media (max-width:768px){
+
+    html{
+        font-size:60%;
+    }
+
+    header{
+        padding:15px;
+    }
+
+    .logo{
+        font-size:2.3rem;
+    }
+
+    nav{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        width:100%;
+    }
+
+    nav a{
+        margin:8px 0;
+        font-size:16px;
+    }
+
+    .home{
+        flex-direction:column;
+        margin-top:220px;
+        gap:30px;
+        padding:20px;
+        text-align:center;
+    }
+
+    .homeimg img{
+        width:220px;
+        height:270px;
+    }
+
+    .content h1{
+        font-size:2.3rem;
+    }
+
+    .content h3{
+        font-size:1.4rem;
+    }
+
+    .content p{
+        font-size:15px;
+    }
+
+    .content p br{
+        display:none;
+    }
+
+    .social-icons{
+        display:flex;
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
+    .social-icons a{
+        left:0;
+        margin:10px;
+    }
+
+    .abm h2{
+        font-size:2.3rem;
+        right:0;
+        top:0;
+    }
+
+    .abmepic img{
+        width:200px;
+        height:200px;
+        position:static;
+        margin:20px auto;
+        display:block;
+    }
+
+    .para{
+        flex-direction:column;
+    }
+
+    .para p{
+        position:static;
+        width:100%;
+        padding:15px;
+        font-size:15px;
+    }
+
+    .btn1{
+        position:static;
+        margin:20px auto;
+    }
+
+    .sk h2,
+    .pj h2,
+    .contactmee h2{
+        font-size:2.3rem;
+    }
+
+    .box{
+        gap:20px;
+    }
+
+    .html,
+    .css,
+    .js,
+    .react,
+    .python,
+    .mysql{
+        width:90%;
+        max-width:280px;
+    }
+
+    .project-box{
+        flex-direction:column;
+        gap:30px;
+    }
+
+    .projectcard,
+    .projectcard1,
+    .projectcard2,
+    .projectcard3{
+        width:90%;
+        max-width:320px;
+    }
+
+    .contactmee form{
+        flex-direction:column;
+        width:95%;
+        gap:20px;
+    }
+
+    .inputbox{
+        width:100%;
+    }
+
+    .contactmee form .inputbox input,
+    .contactmee form textarea{
+        width:100%;
+    }
+
+    .footer{
+        padding:30px 15px;
+    }
+
+    .footer ul li{
+        display:block;
+        margin:10px 0;
+    }
+}
